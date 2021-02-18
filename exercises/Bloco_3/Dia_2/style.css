@@ -1,0 +1,35 @@
+h1 {
+    font-size: 65px;
+    color: rgb(78, 62, 33);
+    font-family: sans-serif;
+}onte-font-size
+
+p {
+    font-weight: 600;
+    font-size: 3em;
+}
+
+ul {
+    background-color: rgb(184, 5, 178);
+    font-weight: bold;
+    text-decoration:line-through;
+    line-height: 45px;
+}
+
+.color{
+    background-color: peru;
+}
+
+body {
+    font-size:16px;
+}
+
+#amarelo{
+    background-color: yellow;
+}
+#vermelho{
+    background-color: red;
+}
+#marrom{
+    background-color: brown;
+}
