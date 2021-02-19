@@ -1,0 +1,13 @@
+h1, p{
+    text-align: center;
+}
+
+li:hover{
+    background-color: greenyellow;
+
+}
+li:active{
+    color: rgb(220, 17, 238);
+    font-style: italic;
+    list-style: none;
+    }
