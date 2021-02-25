@@ -119,7 +119,7 @@ if (num1 %2 === 0|| num2 %2 === 0|| num3 %2 ===0){
   console.log(false);
 }
 
-Questão 9 */
+Questão 9 
 
 let num1 = 30;
 let num2 = 20;
@@ -130,3 +130,18 @@ if (num1 %2 !== 0|| num2 %2 !== 0|| num3 %2 !==0){
 }else{
   console.log(false);
 }
+Questão 10
+
+Questão 10 
+let custoProduto = 5;
+let valorVenda = 8;
+let valorCustoTotal;
+let lucro;
+
+if(custoProduto < 0 || valorVenda < 0){
+  console.log("Pane no sistema! Erro!");
+}else{
+  valorCustoTotal = custoProduto + (0.2 * custoProduto);
+  lucro = valorVenda - valorCustoTotal
+  console.log(lucro * 1000);
+} */
