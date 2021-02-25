@@ -1,3 +1,4 @@
+/* Questão 1
 let a = 8;
 let b = 5;
 
@@ -7,9 +8,9 @@ let divisao = a / b;
 let multiplicacao = a * b;
 let modulo = a % b;
 
-/* console.log(soma, subtracao, divisao, multiplicacao, modulo) */
+ console.log(soma, subtracao, divisao, multiplicacao, modulo) 
 
-/* Questão 2 
+Questão 2 
 let num1 = 8;
 let num2 = 5;
 
@@ -44,7 +45,7 @@ if(numero > 20){
   console.log('zero');
 }
 
- Quateão 5 */
+ Quateão 5 
 
  let lado1 = 40;
  let lado2 = 100;
@@ -57,3 +58,31 @@ if(numero > 20){
  } else {
    console.log(false);
  };
+
+  Questão 6 */
+
+let peca = 'torre';
+
+switch(peca){
+  case 'rei':
+    console.log('Pode mover-se em qualquer direção');
+    break;
+  case 'rainha':
+    console.log('pode mover-se em qualquer direção varias vezes');
+    break;
+  case 'torre':
+    console.log('Move-se em linha reta, tanto na vertical quanto na horizonta');
+    break;
+  case 'bispo':
+    console.log('Move-se na diagonal, quantas casas quiser');
+    break;
+  case 'cavalo':
+    console.log('O movimento executado pelo Cavalo é conhecido por “um-dois” ou “em L');
+    break;
+  case 'peão':
+    console.log('É o que morre');
+    break;
+   default:
+    console.log('nenhuma peça valida');
+}
+
