@@ -31,3 +31,15 @@ if(num3 > num4 && num3 > num5){
 }else{
  /*  console.log(num5) */
 }
+
+/*Questão 4*/
+
+let numero = 10;
+
+if(numero > 20){
+  console.log('positivo');
+} else if (numero < 20) {
+  console.log('negativo');
+} else { 
+  console.log('zero');
+}
