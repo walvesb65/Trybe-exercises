@@ -5,9 +5,9 @@ e retorne os movimentos que ela faz.
 - Se a peça passada for inválida, o programa deve retornar uma mensagem de erro.
 - Exemplo: bishop -> diagonals*/
 
-let peca = ('bike');
+let peca = ('Rei');
 
-switch (peca){
+switch (peca.toLowerCase()){
   case 'rei':
     console.log('Pode mover-se em qualquer direção, porém apenas uma casa por vez');
     break;
