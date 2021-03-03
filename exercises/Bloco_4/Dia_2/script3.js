@@ -8,9 +8,4 @@
   pelo número total de elementos.
  */
 
-let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
-let media_ar = 0;
-  for(index = 0; index > numbers; index++){
-    media_ar += numbers / 10;
-    console.logo(numbers)
-  }
+  let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
