@@ -9,4 +9,16 @@ let sextoNumero = Math.ceil(Math.random() * 60);
 
 megaSena = [primeiroNumero ,segundoNumero ,terceiroNumero, quartoNumero, quintoNumero, sextoNumero]
 
-console.log(megaSena);
+let meuJogo = [20, 55, 38, 5, 48, 59];
+let acertos = 0;
+
+for (indexMega = 0; indexMega < megaSena.length; indexMega += 1){
+  for (indexJogo = 0; indexJogo < meuJogo.length; indexJogo += 1){
+    if (megaSena[indexMega] === meuJogo[indexJogo]) {
+      acertos += 1
+    }
+  }
+}
+console.log(megaSena)
+console.log(meuJogo)
+console.log(acertos)
