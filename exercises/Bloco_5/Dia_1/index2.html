@@ -18,14 +18,7 @@
       <div id="terceiroFilho"></div>
       <div id="quartoEUltimoFilho"></div>
     </div>
-<!--     Acesse o elemento elementoOndeVoceEsta .
-Acesse pai a partir de elementoOndeVoceEsta e adicione uma color a ele.
-Acesse o primeiroFilhoDoFilho e adicione um texto a ele. Você se lembra dos vídeos da aula anterior, como fazer isso?
-Acesse o primeiroFilho a partir de pai .
-Agora acesse o primeiroFilho a partir de elementoOndeVoceEsta .
-Agora acesse o texto Atenção! a partir de elementoOndeVoceEsta .
-Agora acesse o terceiroFilho a partir de elementoOndeVoceEsta .
-Agora acesse o terceiroFilho a partir de pai . -->
+
   </div>
   <script>
     console.log(document.getElementById("elementoOndeVoceEsta").parentNode)
@@ -33,6 +26,26 @@ Agora acesse o terceiroFilho a partir de pai . -->
     document.getElementById("primeiroFilhoDoFilho").innerText = "Willian voce pode tudo,basta quere !"
     console.log(document.querySelector("#pai #primeiroFilho"))
     console.log(document.querySelectorAll("#elementoOndeVoceEsta"))
+  
+    /* acho o pai do meu do meu irmão */
+    let achandoPai = document.querySelector("#pai")
+    /* acho o de quem vou ser irmão */
+    let ondeVcEsta = document.querySelector("#elementoOndeVoceEsta")
+    /* eu gero o irmão div, com o comando insertbefor, eu digo aonde meu novo irmão vai ficar */
+    let irmaoDeOndeVoceEsta = document.createElement("div")
+    achandoPai.appendChild(irmaoDeOndeVoceEsta);
+
+  let pai = document.querySelector("#elementoOndeVoceEsta");
+  let filho = document.createElement('div');
+  pai.appendChild(filho)
+
+  let papai = document.querySelector('#primeiroFilhoDoFilho')
+  let filhino = document.createElement('div')
+  papai.appendChild(filhino)
+  filhino.id = 'fi'
+
+  let ppai = document.querySelector('#fi').parentNode.parentNode.nextElementSibling
+console.log(ppai)
   </script>
 </body>
 </html>
