@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario-curriculo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <header class="form-cv">
+   <h1>Formulário para cadastro de currículo</h1>
+   <p>Preencha os campos abaixo.</p>
+ </header>
+ <form id="cv">
+   <div class="form-linha">
+    <fieldset>
+      <div class="content">
+        <label for="name">Nome: </label>
+        <input type="text" name="name" id="name" maxlength="40" required>
+      </div>
+      <div class="content">
+        <label for="">Endereço de e-mail: </label>
+        <input class="email-input" type="email" name="email" id="email" maxlength="50" required>
+      </div>
+      <div class="content">
+        <label for="cpf">CPF: </label>
+        <input type="text" name="cpf" id="cpf" maxlength="11" required>
+      </div>
+      <div class="content">
+        <label for="endereco-text">Endereço: </label>
+        <input type="text" name="endereco-text" id="endereco-text" maxlength="30" required>
+      </div>
+      <div class="content">
+        <label for="city">Cidade: </label>
+        <input type="text" name="city" id="city" maxlength="100" required>
+      </div>
+      <div class="content">
+        <label for="estado">Estado: </label>
+        <select name="estado" id="estado" value="" required>
+        </select>
+      </div>
+      <div class="content">  
+        <label for="">Tipo de imóvel</label>
+        <input type="radio" name="apcasa" id="casa" value="casa" required><span>Casa</span>
+        <input type="radio" name="apcasa" id="ap" value="apartamento" required><span>Apartamento</span>
+      </div>
+    </fieldset>
+    <fieldset>
+      <div class="content">
+        <label for="cv-resumo">Resumo do currículo: </label>
+        <textarea id="cv-resumo" name="cv-resumo" maxlength="1500" cols="50" rows="25" required></textarea>
+      </div>
+      <div class="content">
+        <label for="funcao">Cargo: </label>
+        <input type="text" name="funcao" id="funcao" maxlength="30" required>
+      </div>
+      <div class="content">
+        <label for="descricao">Descrição do Cargo: </label>
+        <input type="text" name="descricao" id="descricao">
+      </div>
+      <div class="content">
+        <label for="data-start">Data de início</label>
+        <input type="text" name="data-start" class="data-start" value="" required>
+      </div>
+    </fieldset>
+    <button type="button" class="submit">Enviar</button>
+    <button type="button" class="clear">Limpar</button>
+   </div>
+   <section class="data-form"></section>
+   <script src="script.js"></script>
+ </form>
+</body>
+</html>

@@ -46,6 +46,14 @@
 
   let ppai = document.querySelector('#fi').parentNode.parentNode.nextElementSibling
 console.log(ppai)
+
+let body = document.querySelectorAll('body')
+for(i = 0; i < body.length; i++){
+  let elementos = body[i]
+ if(body[i].querySelectorAll('#div')){
+   document.removeChild(body)
+ }
+}
   </script>
 </body>
 </html>
