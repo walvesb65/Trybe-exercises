@@ -9,3 +9,4 @@ divCount.innerText = clickCount
 })
 }
 clickpage();
+

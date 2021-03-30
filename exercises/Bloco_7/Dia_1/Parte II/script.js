@@ -30,5 +30,13 @@ function addTrybexWin(string) {
      return result;
    }
    const word = 'Willian'
-   console.log(addTrybexWin(word))
+   console.log(addTrybexWin(word));
   
+   const skills = ['Css', 'Html', 'JavaScript', 'Git', 'GitHub'];
+   const retorno = () => {
+       skills.sort();
+       skills.forEach(element => {
+        `${element}`
+       });
+   }
+   console.log(retorno());
