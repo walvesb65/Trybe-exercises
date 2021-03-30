@@ -23,7 +23,7 @@ function maxWord(string) {
    }
    console.log(maxWord("Antônio foi no banheiro e não sabemos o que aconteceu"));
 
-//  Atividade 4 Parte 2 Etapa 1
+   //  Atividade 4 Parte 2 Etapa 1
 function addTrybexWin(string) {
      const output = 'Tryber x aqui!';
      const result = output.replace('x', string);

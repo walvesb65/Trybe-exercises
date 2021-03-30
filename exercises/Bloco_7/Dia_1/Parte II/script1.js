@@ -8,4 +8,4 @@ clickCount = clickCount + 1
 divCount.innerText = clickCount
 })
 }
-clickpage()
+clickpage();

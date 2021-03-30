@@ -12,10 +12,9 @@ const testingScope = escopo =>  {
 testingScope();
 
 /* Atividade fixação 2 */
-const oddsAndEvens = [54, 5, -4, 54, 54, 2];
+const oddsAndEvens = [80, 5, 4, 54, 74, 2];
 
      const ordenando = () => { 
       return oddsAndEvens.sort((a, b) => a - b);
      }
-
     console.log(ordenando());
