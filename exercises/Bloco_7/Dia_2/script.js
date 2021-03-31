@@ -45,6 +45,6 @@ let newClient = order['name'];
 newClient = 'Luiz Silva';
 let newValue = order['payment'].total
 newValue = 50;
-return `Olá ${newClient}, o total do seu pedido de muzzarella, calabresa e Coca-Cola Zero é ${newValue}.`
+return `Olá ${newClient}, o total do seu pedido de ${Object.keys(order.order.pizza)} e ${order['order'].drinks['coke'].type} é ${newValue}.`
 }
 console.log(orderModifier(order));
