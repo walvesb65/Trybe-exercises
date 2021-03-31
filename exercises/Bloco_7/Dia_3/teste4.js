@@ -18,3 +18,4 @@ assert.strictEqual(myFizzBuzz(300),'fizzbuzz');
 assert.strictEqual(myFizzBuzz(9),'fizz');
 assert.strictEqual(myFizzBuzz(25), 'buzz')
 assert.strictEqual(myFizzBuzz(77), 77);
+assert.strictEqual(myFizzBuzz("love"),false);
