@@ -30,7 +30,7 @@ const atividade = (objeto) => {
 console.log(atividade(lesson3));
 
 const tamanhoObj = (objeto) => {
-  return Object.keys(objeto).length     
+  return Object.keys(objeto).length
 }
 console.log(tamanhoObj(lesson3));
 
@@ -40,14 +40,33 @@ const valor = (objeto) => {
 console.log(valor(lesson1));
 
 
-const allLessons = Object.assign({}, {lesson1}, {lesson2}, {lesson3});
+const allLessons = Object.assign({}, { lesson1 }, { lesson2 }, { lesson3 });
 console.log(allLessons);
 
-const totalAlunos = (objeto) => {
-  const alunos1 = allLessons.lesson1['numeroEstudantes']
-  const alunos2 = allLessons.lesson2['numeroEstudantes']
-  const alunos3 = allLessons.lesson3['numeroEstudantes']
-  return alunos1 + alunos2 + alunos3
+const totalAlunos = () => {
+  const alunosFull = allLessons.lesson1['numeroEstudantes'] + allLessons.lesson2['numeroEstudantes'] + allLessons.lesson3['numeroEstudantes'];
+  return alunosFull;
 }
 console.log(totalAlunos());
 /* Usando o objeto criado no exercício 5, crie uma função que retorne o número total de estudantes em todas as aulas. */
+
+const retornoIndex = (objeto, index) => {
+return Object.values(objeto)[index];
+} 
+console.log(retornoIndex(lesson1,[0]));
+console.log(retornoIndex(lesson2,[0]));
+console.log(retornoIndex(lesson3,[0]));
+/* Crie uma função que obtenha o valor da chave de acordo com a sua posição no objeto.*/
+
+const parKeyValues = (objeto, chave, valor) => {
+  const trueOrFalse = Object.entries(objeto)
+  for(let i = 0; i < trueOrFalse.length; i++){
+    if(trueOrFalse[i][0] == chave && trueOrFalse[i][1] == valor) {
+      return true
+    } else {
+      return false
+    }
+   }
+  }
+console.log(parKeyValues(lesson1, 'materia', 'Matemática'))
+/* Crie uma função que verifique se o par (chave / valor) existe na função. Essa função deve possuir três parâmetros, sendo eles: o objeto, o nome da chave e o valor da chave. Exemplo: */
