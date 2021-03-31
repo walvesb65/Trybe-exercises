@@ -1,0 +1,10 @@
+assert()      	      Checks if a value is true. Same as assert.ok()
+deepEqual()	          Checks if two values are equal
+deepStrictEqual()	    Checks if two values are equal, using the strict equal operator (===)
+notDeepEqual()	      Checks if two values are not equal
+notDeepStrictEqual()	Checks if two values are not equal, using the strict not equal operator (!==)
+notEqual()	          Checks if two values are not equal, using the not equal operator (!=)
+notStrictEqual()	    Checks if two values are not equal, using the strict not equal operator (!==)
+ok()	                Checks if a value is true
+strictEqual()	        Checks if two values are equal, using the strict equal operator (===)
+throws()	 
